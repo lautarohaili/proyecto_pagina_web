@@ -1,0 +1,94 @@
+CONTACTO.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">VOLVER</a>
+      </nav>
+      <h1>CONTACTO</h1>
+    </header>
+    <main>
+      <form action="">
+        <label for="nombre_apellido">Nombre y Apellido(Obligatorio)</label>
+        <input type="text" name="nombre_apellido" />
+        <br />
+        <br />
+        <label for="edad">Edad(Opcional)</label>
+        <input type="text" name="edad" />
+        <br />
+        <br />
+        <label for="e-mail">E-mail(Obligatorio)</label>
+        <input type="text" name="e-mail" />
+        <br />
+        <br />
+        <label for="telefono">Telefono(Opcional)</label>
+        <input type="text" name="telefono" />
+        <br />
+        <br />
+        <div>
+          <label for="edad">Edad(obligatorio)</label>
+          <select name="edad" id="edad">
+            <option value="10a20">de 10a20 años</option>
+            <option value="20a40">de 20a40 años</option>
+            <option value="+40">+40 años</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <fieldset>
+            <legend>Genero</legend>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masc" />
+            <br />
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="femenino" name="genero" value="fem" />
+            <br />
+            <label for="otro">Otro</label>
+            <input type="radio" id="otro" name="genero" value="otro" />
+          </fieldset>
+        </div>
+        <br />
+        <div>
+          <label for="comentarios">Comentarios</label>
+          <br />
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="suscripcion">Recibir Noticias</label>
+          <input
+            type="checkbox"
+            id="suscripcion"
+            name="recibirnoticias"
+            value="yes"
+          />
+        </div>
+        <br />
+        <div>
+          <input type="reset" value="Reset" />
+          <br />
+          <br />
+
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <nav>
+        <a href="">INDICE</a>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,614 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: white;
+  font-size: 20px;
+  margin: 5px;
+  font-family: "Arima Madurai", cursive;
+}
+
+/* =========================== INDEX =========================== */
+
+.contenedor {
+  width: 90%;
+  margin: 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "header header header"
+    "inicio inicio inicio"
+    "contenido contenido contenido"
+    "contenido1 contenido1 sidebar"
+    "moneda contenido2 sidebar"
+    "contenido3 contenido3 sidebar"
+    "contenido4 bandera sidebar"
+    "footer footer footer"
+    "hora hora hora";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor,
+.contenedor .sidebar,
+.contenedor .footer {
+  background-color: #4949f8ce;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.contenedor {
+  background-color: white;
+}
+
+.header {
+  grid-area: header;
+  color: black;
+}
+
+.contenedor .inicio {
+  grid-area: inicio;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.contenedor .contenido {
+  grid-area: contenido;
+  text-align: center;
+}
+
+.contenido1 {
+  grid-area: contenido1;
+
+  background-color: #6c6cf5ce;
+}
+.contenido2 {
+  grid-area: contenido2;
+
+  background-color: #6c6cf5ce;
+}
+
+.monedaImagen {
+  grid-area: moneda;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenido3 {
+  grid-area: contenido3;
+
+  background-color: #6c6cf5ce;
+}
+.contenido4 {
+  grid-area: contenido4;
+
+  background-color: #6c6cf5ce;
+}
+
+.banderaImagen {
+  grid-area: bandera;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.horario {
+  grid-area: hora;
+  text-align: center;
+}
+
+/* =========================== HEADER =========================== */
+
+.header {
+  padding: 32px;
+  margin: 10px;
+}
+
+.menu {
+  color: black;
+  list-style: none;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__submenu {
+  font-size: 35px;
+  background-color: white;
+  color: #d7dbdd;
+  font-weight: bold;
+  padding: 5px 8px 5px 8px;
+  border-top: solid 5px;
+  border-right: solid 20px;
+  border-bottom: solid 5px;
+  border-left: solid 20px;
+}
+.logo {
+  font-size: 35px;
+  margin-left: 20px;
+  padding-bottom: 70px;
+}
+
+.logo__imagen {
+  width: 300px;
+}
+
+/* =========================== ITALIA =========================== */
+
+.contenedorItalia {
+  width: 90%;
+  margin: 20px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "italia italia italia"
+    "arte arte arte"
+    "pintura pintura adan"
+    "pintura pintura gioconda"
+    "escultura escultura david"
+    "cultura cultura cultura"
+    "comidas gastronomia gastronomia"
+    "fiestas fiestas fiestas"
+    "footer footer footer";
+}
+
+.contenedorItalia,
+.contenedorItalia .headerItalia,
+.contenedorItalia .footerItalia {
+  background-color: #4949f8ce;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.headerItalia {
+  grid-area: italia;
+}
+
+.titleArte {
+  grid-area: arte;
+  font-size: 20px;
+}
+
+.infoPintura {
+  grid-area: pintura;
+  text-align: justify;
+}
+
+.imagenGioconda {
+  grid-area: gioconda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagenAdan {
+  grid-area: adan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoEscultura {
+  grid-area: escultura;
+  text-align: justify;
+}
+
+.imagenDavid {
+  grid-area: david;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoCultura {
+  grid-area: cultura;
+}
+
+.infoGastronomia {
+  grid-area: gastronomia;
+}
+
+.imagenComidas {
+  grid-area: comidas;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoFiestas {
+  grid-area: fiestas;
+}
+
+.footerItalia {
+  grid-area: footer;
+}
+/* ================ HEADER ITALIA ================= */
+
+.headerItalia {
+  padding: 32px;
+  margin: 10px;
+}
+
+.volverItalia {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.headerItalia__menu {
+  color: black;
+  list-style: none;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.headerItalia__submenu {
+  background-color: #d7d8f7af;
+  color: #a6a6ada8;
+  font-weight: bold;
+  padding: 5px 8px 5px 8px;
+  border-top: solid 5px;
+  border-right: solid 20px;
+  border-bottom: solid 5px;
+  border-left: solid 20px;
+}
+
+/* ================ FOOTER ITALIA ================= */
+
+.footerItalia__indice {
+  font-size: 22px;
+  display: flex;
+}
+
+/* =========================== ROMA =========================== */
+
+.contenedorRoma {
+  width: 90%;
+  margin: 10px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "roma roma roma"
+    "roma1 roma1 roma1"
+    "roma2 roma2 roma2"
+    "roma3 roma3 roma3"
+    "roma4 roma4 roma4"
+    "roma5 roma5 roma5"
+    "roma6 roma6 roma6"
+    "roma7 roma7 roma7"
+    "roma8 roma8 roma8"
+    "roma9 roma9 roma9"
+    "roma10 roma10 roma10"
+    "footer footer footer";
+}
+
+.contenedorRoma,
+.contenedorRoma .headerRoma,
+.contenedorRoma .footerRoma {
+  background-color: #4949f8ce;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.headerRoma {
+  grid-area: header;
+}
+
+.sectionRoma {
+  grid-area: roma;
+  text-align: center;
+}
+.sectionRoma1 {
+  grid-area: roma1;
+}
+.sectionRoma2 {
+  grid-area: roma2;
+  padding-left: 20px;
+}
+.sectionRoma3 {
+  grid-area: roma3;
+  padding-left: 20px;
+}
+.sectionRoma4 {
+  grid-area: roma4;
+  padding-left: 20px;
+}
+.sectionRoma5 {
+  grid-area: roma5;
+  padding-left: 20px;
+}
+.sectionRoma6 {
+  grid-area: roma6;
+  padding-left: 20px;
+}
+.sectionRoma7 {
+  grid-area: roma7;
+  padding-left: 20px;
+}
+.sectionRoma8 {
+  grid-area: roma8;
+  padding-left: 20px;
+}
+.sectionRoma9 {
+  grid-area: roma9;
+  padding-left: 20px;
+}
+.sectionRoma10 {
+  grid-area: roma10;
+  padding-left: 20px;
+}
+.footerRoma {
+  grid-area: footer;
+}
+
+/* ================ HEADER ROMA ================= */
+
+/* ================ FOOTER ROMA ================= */
+
+.indiceRoma {
+  font-size: 22px;
+  display: flex;
+}
+
+/* =========================== DONDE IR =========================== */
+
+.contenedorIr {
+  width: 90%;
+  margin: 10px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "sitios sitios sitios"
+    "sitiosa sitiosa sitiosa"
+    "sitiosb sitiosb sitiosb"
+    "sitiosc sitiosc sitiosc"
+    "sitiosd sitiosd sitiosd"
+    "sitiose sitiose sitiose"
+    "categorias categorias categorias"
+    "categoriasa categoriasaj categoriasaj"
+    "categoriasb categoriasbj categoriasbj"
+    "categoriasc categoriascj categoriascj"
+    "categoriasd categoriasdj categoriasdj"
+    "footer footer footer";
+}
+
+.contenedorIr,
+.contenedorIr .headerIr,
+.contenedorIr .footerIr {
+  background-color: #4949f8ce;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.headerIr {
+  grid-area: header;
+}
+
+.sectionIr1 {
+  grid-area: sitios;
+}
+.sectionIr1a {
+  grid-area: sitiosa;
+}
+.sectionIr1b {
+  grid-area: sitiosb;
+}
+.sectionIr1c {
+  grid-area: sitiosc;
+}
+.sectionIr1d {
+  grid-area: sitiosd;
+}
+.sectionIr1e {
+  grid-area: sitiose;
+}
+
+.sectionIr2 {
+  grid-area: categorias;
+}
+.sectionIr2a {
+  grid-area: categoriasa;
+}
+.sectionIr2a__ej {
+  grid-area: categoriasaj;
+}
+.sectionIr2b {
+  grid-area: categoriasb;
+}
+.sectionIr2b__ej {
+  grid-area: categoriasbj;
+}
+.sectionIr2c {
+  grid-area: categoriasc;
+}
+.sectionIr2c__ej {
+  grid-area: categoriascj;
+}
+.sectionIr2d {
+  grid-area: categoriasd;
+}
+.sectionIr2d__ej {
+  grid-area: categoriasdj;
+}
+
+.footerIr {
+  grid-area: footer;
+}
+
+/* ================ HEADER DONDE IR ================= */
+
+.headerIr {
+  padding: 32px;
+  margin: 10px;
+}
+
+.headerIr .menuIr {
+  color: black;
+  background-color: #60bbf7ee;
+  list-style: none;
+  font-size: 20px;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+}
+
+ul > ul > li {
+  padding-left: 25px;
+}
+
+.submenuIr {
+  font-size: 35px;
+  background-color: white;
+  color: #d7dbdd;
+  font-weight: bold;
+}
+.volverIr {
+  font-size: 20px;
+  margin-left: 20px;
+  padding-bottom: 40px;
+}
+
+/* ================ FOOTER DONDE IR ================= */
+
+.subirIr {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+/* =========================== DATOS UTILES =========================== */
+
+.contenedorDatos {
+  width: 90%;
+  margin: 10px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "ubicacion ubicacion ubicacion"
+    "ciudades ciudades ciudades"
+    "tabla tabla tabla"
+    "clima clima clima"
+    "estaciones estaciones estaciones"
+    "viajar viajar viajar"
+    "footer footer footer";
+}
+
+.contenedorDatos,
+.contenedorDatos .headerDatos,
+.contenedorDatos .footerDatos {
+  background-color: #4949f8ce;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.headerDatos {
+  grid-area: header;
+}
+
+.menuDatos {
+  grid-area: menu;
+}
+
+.ubicacionDatos {
+  grid-area: ubicacion;
+}
+
+.ciudadesDatos {
+  grid-area: ciudades;
+  background-color: white;
+  text-align: center;
+}
+.contenedorDatos .tablaDatos {
+  grid-area: tabla;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.climaDatos {
+  grid-area: clima;
+}
+.estacionesDatos {
+  grid-area: estaciones;
+}
+.viajarDatos {
+  grid-area: viajar;
+}
+
+.footerDatos {
+  grid-area: footer;
+}
+
+/* ================ HEADER DATOS UTILES ================= */
+
+.headerDatos {
+  font-size: 20px;
+  margin-left: 10px;
+  padding-bottom: 40px;
+}
+
+.menuDatos__principal {
+  color: black;
+  list-style: none;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuDatos__principal__submenu {
+  background-color: #d7d8f7af;
+  color: #a6a6ada8;
+  font-weight: bold;
+  padding: 5px 8px 5px 8px;
+  border-top: solid 5px;
+  border-right: solid 20px;
+  border-bottom: solid 5px;
+  border-left: solid 20px;
+}
+
+/* ================ FOOTER DATOS UTILES ================= */
+
+.subirDatos {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+/* =========================== CONTACTO =========================== */
