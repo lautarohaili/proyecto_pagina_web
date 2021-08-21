@@ -36,52 +36,58 @@
   </head>
   <body>
     <div class="bg-secondary bg-opacity-25">
-      <header class="container">
-        <div class="row">
-          <div class="col-md-2 col-xs-4">
-            <img class="logo__imagen" src="./imagenes/logo.png" alt="logo" />
-          </div>
-          <nav class="">
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-dark p-4">
-                <ul>
-                  <li>
-                    <a href="./Paginas/italia.html">Italia</a>
-                  </li>
-                  <li>
-                    <a href="./Paginas/roma.html">Roma</a>
-                  </li>
-                  <li>
-                    <a href="./Paginas/donde ir.html">Donde ir</a>
-                  </li>
-                  <li>
-                    <a href="./Paginas/datos utiles.html">Datos Utiles</a>
-                  </li>
-                  <li>
-                    <a href="./Paginas/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+      <header class="container-fluid">
+
+          <nav
+            class="
+              navbar navbar-dark
+              border-3 border-bottom
+              bg-dark
+            "
+          >
+            <div class="container-fluid">
+              <img class="logo__imagen" src="./imagenes/logo.png" alt="logo" />
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavegacion"
+                aria-controls="menuNavegacion"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </div>
-            <nav class="navbar navbar-dark bg-secondary">
-              <div class="container-fluid">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarToggleExternalContent"
-                  aria-controls="navbarToggleExternalContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
-            </nav>
           </nav>
+          <div
+            class="collapse navbar-collapse bg-dark"
+            id="menuNavegacion"
+          >
+            <ul class="navbar-nav ms-3 bg-dark p-1">
+              <li class="nav-item">
+                <a class="nav-link" href="./Paginas/italia.html">Italia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Paginas/roma.html">Roma</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Paginas/donde ir.html">Donde ir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Paginas/datos utiles.html"
+                  >Datos Utiles</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Paginas/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row align-items-stretch">
           <div class="border col-sm-12 col-md-12">
             <div
