@@ -262,6 +262,22 @@ body {
   right: 0;
 }
 
+/* ================================= HTML ITALIA ================================= */
+
+/* ============================ MAIN ============================ */
+
+.tittle__italia {
+  text-align: center;
+}
+
+.titleArte {
+  text-align: center;
+}
+
+.imagenGioconda {
+  height: 500px;
+}
+
 /*
 .section1 {
   background-image: url("https://source.unsplash.com/nb-VlKnqdUs");
