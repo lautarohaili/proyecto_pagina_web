@@ -6,7 +6,7 @@ DATOS UTILES.html
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datos Utiles</title>
-    <link rel="stylesheet" href="../Style/primeros_pasos_html.css" />
+    <link rel="stylesheet" href="../style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,69 +21,37 @@ DATOS UTILES.html
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <!-- NavBar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="menu__index collapse navbar-collapse"
-            id="navbarNavDropdown"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./italia.html">Italia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./roma.html">Roma</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./donde ir.html">Donde Ir</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./datos utiles.html">Datos Utiles</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <img class="header__logo" src="../imagenes/logo1.png" width="200px" />
+      <nav class="header__links">
+        <a class="header__link" href="../index.html">Inicio</a>
+        <a class="header__link" href="./italia.html">Italia</a>
+        <a class="header__link" href="./roma.html">Roma</a>
+        <a class="header__link" href="./donde ir.html">Donde Ir</a>
+        <a class="header__link" href="./datos utiles.html">Datos Utiles</a>
       </nav>
       <!-- /NavBar -->
     </header>
-    <div class="container">
-      <div class="ubicacionDatos" id="section1">
-        <h1>Ubicacion</h1>
+
+    <!-- MAIN -->
+
+    <main>
+      <section class="section1">
+        <h1 class="section1__tittle">Ubicacion</h1>
         <!-- PONER MAPA DE EUROPA SENIALANDO UBICACION DE ITALIA-->
-        <p>
+        <p class="section1__text">
           Italia se encuentra situada en el sur de Europa, en el centro del
           Mediterráneo. Forma una península que se extiende desde los Alpes
           hasta las cercanías de la costa africana. Limita al norte con Francia,
           Suiza, Austria y Eslovenia.
         </p>
-      </div>
-      <div class="CiudadesDatos" id="section2">
-        <h1>Principales Ciudades</h1>
-      </div>
-      <div class="tablaDatos">
+      </section>
+      <section class="section2">
+        <h1 class="section2__tittle">Principales Ciudades</h1>
+
         <!-- Ver si dejo tabla o solo se nombra las ciudades con imagenes-->
-        <table>
+        <table class="section2__table">
           <style>
             table,
             th,
@@ -129,12 +97,12 @@ DATOS UTILES.html
             <td>102.4 km²</td>
           </tr>
         </table>
-      </div>
-      <div class="climaDatos" id="section3">
-        <h2>Clima y Temperaturas</h2>
+      </section>
+      <section class="section3">
+        <h2 class="section3__tittle">Clima y Temperaturas</h2>
 
         <!-- BUSCAR URL DE CLIMA ACTUAL EN ITALIA(? (TODAVIA NO DECIDIDO)-->
-        <p>
+        <p class="section3__text">
           El clima de Italia es muy diverso, está lejos del estereotipo del
           clima de mediterráneo y muchas veces las temperaturas dependen del
           lugar en donde te encuentres. La mayor parte de Italia tiene veranos
@@ -146,54 +114,56 @@ DATOS UTILES.html
           frías en Italia suelen pasar rápido y las calurosas permanecer por más
           tiempo.
         </p>
-      </div>
-      <div class="estacionesDatos">
-        <h3>POR ESTACIONES</h3>
-        <p>
-          -Primavera : El clima de primavera en Italia suele ser cálido y aunque
-          aún hay rastros de lluvias y nieve por el invierno anterior, el clima
-          va ir mejorando con el pasar de los días y meses. Al iniciar la
-          temporada, las temperaturas irán ascendiendo, sin embargo, el cambio
-          recién se sentirá en los meses de mayo y junio. La primavera en Italia
-          comienza el 21 de marzo y termina el 21 de junio.
-        </p>
-        <p>
-          -Verano : El clima durante la temporada de verano puede llegar a
-          presentar temperaturas muy altas y sentirse un clima muy caliente
-          especialmente en zonas del sur. Durante el verano en Italia el clima
-          suele ser seco, pero en zonas de centro y sur del país, puede llegar a
-          ser húmedo. La temporada de verano inicia el 21 de junio y acaba entre
-          el 21 y 23 de septiembre
-        </p>
-        <p>
-          -Otono : El clima durante el otoño en Italia comienza con temperaturas
-          agradables y cálidas, sin embargo, con el pasar de los días y meses,
-          las temperaturas descienden y el ambiente se torna frío. En septiembre
-          las temperaturas continúan siendo cálidas al igual que en octubre, ya
-          en noviembre hay un cambio radical de temperatura, el frío incrementa,
-          así como también los días de lluvias. El otoño en Italia comienza
-          entre el 21 al 23 de septiembre hasta el 21 de diciembre.
-        </p>
-        <p>
-          -Invierno : Durante el invierno, el clima en Italia tiene dos tipos,
-          en algunas regiones como en las costas de Sardinia el frío es leve,
-          pero en otras regiones como al norte del país, las temperaturas son
-          muy bajas y el frío es intenso, además suelen haber nevadas y humedad.
-          La época de invierno en Italia empieza el 21 de diciembre y termina el
-          21 de marzo.
-        </p>
-      </div>
+        <article class="section3__article">
+          <h3 class="section3__tittle">POR ESTACIONES</h3>
+          <p class="section3__text">
+            -Primavera : El clima de primavera en Italia suele ser cálido y
+            aunque aún hay rastros de lluvias y nieve por el invierno anterior,
+            el clima va ir mejorando con el pasar de los días y meses. Al
+            iniciar la temporada, las temperaturas irán ascendiendo, sin
+            embargo, el cambio recién se sentirá en los meses de mayo y junio.
+            La primavera en Italia comienza el 21 de marzo y termina el 21 de
+            junio.
+          </p>
+          <p class="section3__text">
+            -Verano : El clima durante la temporada de verano puede llegar a
+            presentar temperaturas muy altas y sentirse un clima muy caliente
+            especialmente en zonas del sur. Durante el verano en Italia el clima
+            suele ser seco, pero en zonas de centro y sur del país, puede llegar
+            a ser húmedo. La temporada de verano inicia el 21 de junio y acaba
+            entre el 21 y 23 de septiembre
+          </p>
+          <p class="section3__text">
+            -Otono : El clima durante el otoño en Italia comienza con
+            temperaturas agradables y cálidas, sin embargo, con el pasar de los
+            días y meses, las temperaturas descienden y el ambiente se torna
+            frío. En septiembre las temperaturas continúan siendo cálidas al
+            igual que en octubre, ya en noviembre hay un cambio radical de
+            temperatura, el frío incrementa, así como también los días de
+            lluvias. El otoño en Italia comienza entre el 21 al 23 de septiembre
+            hasta el 21 de diciembre.
+          </p>
+          <p class="section3__text">
+            -Invierno : Durante el invierno, el clima en Italia tiene dos tipos,
+            en algunas regiones como en las costas de Sardinia el frío es leve,
+            pero en otras regiones como al norte del país, las temperaturas son
+            muy bajas y el frío es intenso, además suelen haber nevadas y
+            humedad. La época de invierno en Italia empieza el 21 de diciembre y
+            termina el 21 de marzo.
+          </p>
+        </article>
+      </section>
 
-      <div class="viajarDatos" id="section4">
-        <h2>Cuando Viajar</h2>
-        <p>
+      <section class="section4">
+        <h2 class="section4__tittle">Cuando Viajar</h2>
+        <p class="section4__text">
           Las mejores fechas para viajar son sin duda alguna la primavera
           (abril-mayo) y el otoño (octubre-noviembre), cuando los colores de la
           naturaleza son particularmente hermosos, las temperaturas son suaves y
           hay pocos turistas.
         </p>
 
-        <p>
+        <p class="section4__text">
           Trata de evitar agosto porque el calor puede ser sofocante, los
           precios suben y todo el país es invadido por hordas de turistas.
           Agosto, por lo tanto, es también el mes en el que la mayoría de los
@@ -204,7 +174,7 @@ DATOS UTILES.html
           mejores meses son de julio a septiembre.
         </p>
 
-        <p>
+        <p class="section4__text">
           En las regiones meridionales el clima suele ser templado incluso en
           invierno, pero no se puede excluir el encontrar frío y heladas,
           especialmente en las zonas interiores. Otro consejo es organizar su
@@ -214,13 +184,20 @@ DATOS UTILES.html
           sagradas, y cada municipio dedica un día de celebración a su santo
           patrón.
         </p>
-      </div>
-    </div>
+      </section>
+    </main>
+
+    <!-- /MAIN -->
+
+    <!-- FOOTER -->
+
     <footer class="footerDatos">
       <nav class="subirDatos">
         <a href="">INDICE</a>
       </nav>
     </footer>
+
+    <!-- /FOOTER -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
