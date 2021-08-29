@@ -1,13 +1,29 @@
-* {
-  margin: 0%;
-  padding: 0%;
+/* ================================= HTML ITALIA ================================= */
+
+/* ================================= HTML DONDE IR ================================= */
+
+/*
+.section1 {
+  background-image: url("https://source.unsplash.com/nb-VlKnqdUs");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  margin-top: 50px;
+}
+.section1 h3 {
+  color: black;
+  font-size: 60px;
+  text-align: center;
 }
 
-body {
-  background-color: white;
-  font-size: 20px;
-  margin: 5px;
-  font-family: "Arima Madurai", cursive;
+.section2 {
+  background-image: url(basilica_san_pietro.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  margin-top: 50px;
 }
 
 /* =========================== INDEX =========================== 

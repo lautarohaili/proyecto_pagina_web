@@ -6,23 +6,69 @@ ROMA.html
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roma</title>
-    <link rel="stylesheet" href="../Style/primeros_pasos_html.css" />
+    <link rel="stylesheet" href="../style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="contenedorRoma">
-      <header class="headerRoma">
-        <nav>
-          <a class="volverRoma" href="../index.html">VOLVER</a>
-        </nav>
-      </header>
-      <!-- HTML N.3, RESUMEN DE INFORMACION DE ROMA CAPITAL DE ITALIA-->
-
+    <header>
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="menu__index collapse navbar-collapse"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./italia.html">Italia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./roma.html">Roma</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./donde ir.html">Donde Ir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./datos utiles.html">Datos Utiles</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- /NavBar -->
+    </header>
+    <!-- HTML N.3, RESUMEN DE INFORMACION DE ROMA CAPITAL DE ITALIA-->
+    <div class="container">
       <div class="sectionRoma">
         <h1>Roma, la capital de Italia</h1>
         <p>
@@ -161,12 +207,18 @@ ROMA.html
           1925 alberga el Museo Nazionale del Castel Sant’Angelo.
         </p>
       </div>
-
-      <footer class="footerRoma">
-        <nav class="indiceRoma">
-          <a href="">INDICE</a>
-        </nav>
-      </footer>
     </div>
+
+    <footer class="footerRoma">
+      <nav class="indiceRoma">
+        <a href="">INDICE</a>
+      </nav>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
