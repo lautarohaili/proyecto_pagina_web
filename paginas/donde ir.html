@@ -13,36 +13,63 @@ DONDE IR.html
       href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="contenedorIr">
-      <header class="headerIr">
-        <div class="volverIr">
-          <nav>
-            <a class="dondeIr" href="../index.html">VOLVER</a>
-          </nav>
-        </div>
-        <div class="menuIr">
-          <ul>
-            <li class="menuIr__sub">
-              <a href="#section1">Sitios Turisticos mas Importantes</a>
-            </li>
-            <li class="menuIr__sub">
-              <a href="#section2">Sitios Turisticos por Categoria</a>
-            </li>
-            <ul>
-              <li class="menuIr__sub"><a href="#section3">Museos</a></li>
-              <li class="menuIr__sub">
-                <a href="#section4">Monumentos</a>
+    <header>
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="menu__index collapse navbar-collapse"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
               </li>
-              <li class="menuIr__sub"><a href="#section5">Iglesias</a></li>
-              <li class="menuIr__sub"><a href="#section6">Plazas</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="./italia.html">Italia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./roma.html">Roma</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./donde ir.html">Donde Ir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./datos utiles.html">Datos Utiles</a>
+              </li>
             </ul>
-          </ul>
+          </div>
         </div>
-      </header>
+      </nav>
+      <!-- /NavBar -->
+    </header>
 
-      <div class="sectionIr1" id="section1">
+    <div class="container-fluid">
+      <div class="sectionIr1 border col-sm-12 col-md-12 py-3" id="section1">
         <h2>Sitios Turisticos mas importantes</h2>
         <p>
           Italia, un país que encierra una inmensa cantidad de arte histórico a
@@ -55,46 +82,81 @@ DONDE IR.html
           debido a su riqueza cultural los turistas eligen visitar.
         </p>
       </div>
-      <div class="sectionIr1a">
-        <h3>-Coliseo Romano</h3>
-        <p>
-          Esta es la edificación más representativa de toda Roma, pese al paso
-          del tiempo no pierde su valor histórico por el lugar de batallas y
-          espectáculos en la antigüedad.
-        </p>
+    </div>
+
+    <div class="container_fluid card__box">
+      <div class="card">
+        <div class="imgCard">
+          <img src="../imagenes/Donde Ir/coliseo.jpg" />
+        </div>
+        <div class="content__card">
+          <h4>Coliseo Romano</h4>
+          <p>
+            Esta es la edificación más representativa de toda Roma, pese al paso
+            del tiempo no pierde su valor histórico por el lugar de batallas y
+            espectáculos en la antigüedad.
+          </p>
+        </div>
       </div>
-      <div class="sectionIr1b">
-        <h3>-Capilla Sixtina</h3>
-        <p>
-          Este es uno de los lugares más importantes de todo El Vaticano,ubicada
-          cerca de la Basílica de San Pedro. La capilla tiene una forma
-          rectangular peculiar.
-        </p>
+      <div class="card">
+        <div class="imgCard">
+          <img src="../imagenes/Donde Ir/capilla-sixtina.jpg" />
+        </div>
+        <div class="content__card">
+          <h4>Capilla Sixtina</h4>
+          <p>
+            Este es uno de los lugares más importantes de todo El
+            Vaticano,ubicada cerca de la Basílica de San Pedro. La capilla tiene
+            una forma rectangular peculiar.
+          </p>
+        </div>
       </div>
-      <div class="sectionIr1c">
-        <h3>-Catedral de Florencia (Santa María del Fiore)</h3>
-        <p>
-          Es uno de los edificios más grandes de la cristianidad, conocida como
-          la Basílica de Santa Maria del Fiore de la archidiócesis católica
-          romana de Florencia, notable por su cúpula.
-        </p>
+      <div class="card">
+        <div class="imgCard">
+          <img src="../imagenes/Donde Ir/santa maria del fiore-florencia.JPG" />
+        </div>
+        <div class="content__card">
+          <h4>Catedral de Florencia (Santa María del Fiore)</h4>
+          <p>
+            Es uno de los edificios más grandes de la cristianidad, conocida
+            como la Basílica de Santa Maria del Fiore de la archidiócesis
+            católica romana de Florencia, notable por su cúpula.
+          </p>
+        </div>
       </div>
-      <div class="sectionIr1d">
-        <h3>-El Panteón de Roma</h3>
-        <p>
-          Este es un templo consagrado a todos los dioses, conocido como la
-          rotonda que se caracteriza por su forma circular y por su apertura a
-          todo el público.
-        </p>
+
+      <div class="card">
+        <div class="imgCard">
+          <img src="../imagenes/Donde Ir/panteon.jpg" />
+        </div>
+        <div class="content__card">
+          <h4>El Panteón de Roma</h4>
+          <p>
+            Este es un templo consagrado a todos los dioses, conocido como la
+            rotonda que se caracteriza por su forma circular y por su apertura a
+            todo el público.
+          </p>
+        </div>
       </div>
-      <div class="sectionIr1e">
-        <h3>-Basílica de San Marcos</h3>
-        <p>
-          Es la edificación religiosa más importante de Venecia que refleja la
-          influencia bizantina. Inicialmente fue construida como continuación
-          del Palacio Ducal en el año 828.
-        </p>
+
+      <div class="card">
+        <div class="imgCard">
+          <img
+            src="../imagenes/Donde Ir/basilica de san marcos - venezia.jpg"
+          />
+        </div>
+        <div class="content__card">
+          <h4>Basílica de San Marcos</h4>
+          <p>
+            Es la edificación religiosa más importante de Venecia que refleja la
+            influencia bizantina. Inicialmente fue construida como continuación
+            del Palacio Ducal en el año 828.
+          </p>
+        </div>
       </div>
+    </div>
+
+    <div class="container">
       <div class="sectionIr2" id="section2">
         <h2>Sitios Turisticos por Categoria</h2>
       </div>
@@ -171,7 +233,7 @@ DONDE IR.html
         <h4>Monumentos destacados:</h4>
 
         <p>
-          -El Coliseo de Roma: Una de las ediicaciones más representativas de
+          -El Coliseo de Roma: Una de las edificaciones más representativas de
           toda la ciudad, el Coliseo Romano era el escenario de arduas batallas
           entre hombres llamados gladiadores y animales salvajes para deleite
           del público.
@@ -280,11 +342,17 @@ DONDE IR.html
         <p>-Piazza de España (Roma)</p>
         <p>-Piazza della Signoria (Florencia)</p>
       </div>
-      <footer class="footerIr">
-        <nav class="subirIr">
-          <a href="donde ir.html">INDICE</a>
-        </nav>
-      </footer>
     </div>
+    <footer class="footerIr">
+      <nav class="subirIr">
+        <a href="donde ir.html">INDICE</a>
+      </nav>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
