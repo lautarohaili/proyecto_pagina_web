@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Italia</title>
+    <meta
+      name="description"
+      content="Este sitio es una pagina informativa/turistica de Italia y sus mejores ciudad, y lugares para conocer"
+    />
+    <meta
+      name="keywords"
+      content="italia, roma, coliseo, vaticano, milan, venecia, museos, monumentos, iglesias, sitios turisticos"
+    />
+    <title>Home-Italia</title>
     <link rel="stylesheet" href="./css/style/primeros_pasos_html.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,12 +52,7 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
-                  >Inicio</a
-                >
+                <a class="nav-link" href="./index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./paginas/italia.html">Italia</a>
@@ -72,7 +75,7 @@
       <!-- /NavBar -->
     </header>
     <!-- CARROUSEL -->
-    <div class="container-fluid">
+    <div class="">
       <div class="row align-items-stretch">
         <div class="border col-sm-12 col-md-12">
           <div
@@ -246,7 +249,7 @@
 
       <!-- SECTION IMAGENES -->
     </div>
-    <div class="container-fluid">
+    <div class="">
       <div class="section1">
         <img src="./imagenes/Monumentos/foro.jpg" alt="" />
         <div class="section1__titulo bg-dark p-2 text-light bg-opacity-50">
@@ -267,7 +270,7 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="">
       <div class="section2">
         <img src="./imagenes/Iglesias/basilica_san_pietro.jpg" alt="" />
         <div class="section2__titulo bg-dark p-2 text-light bg-opacity-50">
@@ -288,7 +291,7 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="">
       <div class="section3">
         <img src="./imagenes/Espacios Naturales/cinque-terre.jpg" alt="" />
         <div class="section3__titulo bg-dark p-2 text-light bg-opacity-50">
@@ -311,21 +314,112 @@
     <!-- /SECTION IMAGENES -->
 
     <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div style="text-align: center; padding: 1em 0">
+              <h4>
+                <a style="text-decoration: none"
+                  ><span style="color: #fff"
+                    >Hora actual en<br />Italia</span
+                  ></a
+                >
+              </h4>
+              <iframe
+                src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=Europe%2FRome"
+                width="100%"
+                height="90"
+                frameborder="0"
+                seamless
+              ></iframe>
+            </div>
+          </div>
 
-    <footer>
-      <div style="text-align: center; padding: 1em 0">
-        <h4>
-          <a style="text-decoration: none" href="#"
-            ><span style="color: gray">Hora actual en</span><br />Italia</a
-          >
-        </h4>
-        <iframe
-          src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=Europe%2FRome"
-          width="100%"
-          height="90"
-          frameborder="0"
-          seamless
-        ></iframe>
+          <div class="col-xs-6 col-md-3">
+            <h6>MENU</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="./index.html" class="nav-link">Home</a>
+              </li>
+              <li>
+                <a href="./paginas/italia.html" class="nav-link">Italia</a>
+              </li>
+              <li>
+                <a href="./paginas/roma.html" class="nav-link">Roma</a>
+              </li>
+              <li>
+                <a href="./paginas/donde ir.html" class="nav-link">Donde Ir</a>
+              </li>
+              <li>
+                <a href="./paginas/datos utiles.html" class="nav-link"
+                  >Datos Utiles</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Secciones</h6>
+            <ul class="footer-links">
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/italia.html">Arte</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./paginas/italia.html">Gastronomia</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./paginas/italia.html"
+                  >Fiestas y Tradiciones</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="./paginas/roma.html"
+                  >Que ver en Roma</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="./paginas/donde ir.html"
+                  >Sitios turisticos mas Importantes</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="./paginas/datos utiles.html"
+                  >Ubicacion</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="./paginas/datos utiles.html"
+                  >Cuando Viajar</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2021 All Rights Reserved .
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- /FOOTER -->

@@ -10,6 +10,8 @@ body {
   font-family: "Arima Madurai", cursive;
 }
 
+/* ================================= HTML INDEX ================================= */
+
 /* ============= HEADER ============== */
 .navbar-nav {
   margin-left: auto;
@@ -19,7 +21,35 @@ body {
   font-size: 25px;
 }
 
-/* ============================ MAIN ============================ */
+/* ============= HEADER ============== *
+
+.navbar-nav {
+  margin-left: auto;
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.menu__index {
+  font-size: 25px;
+  display: flex;
+}
+.menu__index li {
+  list-style: none;
+}
+.menu__index li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.menu__index li a:hover {
+  padding: 5px 10px;
+  background-color: #26272b;
+  color: white;
+  border-radius: 15px;
+}
+
+/* ================ MAIN INDEX =================== */
 
 /* ============= CARDS ============== */
 
@@ -262,9 +292,147 @@ body {
   right: 0;
 }
 
+/* ================ FOOTER INDEX ================= */
+
+.site-footer {
+  margin-top: 20px;
+  background-color: #26272b;
+  padding: 25px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer a {
+  color: #737373;
+}
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #737373;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+.site-footer .social-icons {
+  text-align: right;
+}
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+.copyright-text {
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+}
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover {
+  background-color: #1bfa21;
+}
+.social-icons a.twitter:hover {
+  background-color: white;
+}
+.social-icons a.linkedin:hover {
+  background-color: #db2a19;
+}
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+
 /* ================================= HTML ITALIA ================================= */
 
-/* ============================ MAIN ============================ */
+/* ================ MAIN ITALIA =================== */
 
 .tittle__italia {
   text-align: center;
@@ -275,81 +443,69 @@ body {
 }
 
 .imagenGioconda {
-  height: 500px;
+  display: flex;
+  justify-content: center;
 }
+
+.imagenDavid {
+  display: flex;
+  justify-content: center;
+}
+.imagenComidas {
+  display: flex;
+  justify-content: center;
+}
+
+/* ================ HEADER ITALIA ================= */
+
+.headerItalia {
+  padding: 32px;
+  margin: 10px;
+}
+
+.volverItalia {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.headerItalia__menu {
+  color: black;
+  list-style: none;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.headerItalia__submenu {
+  background-color: #d7d8f7af;
+  color: #a6a6ada8;
+  font-weight: bold;
+  padding: 5px 8px 5px 8px;
+  border-top: solid 5px;
+  border-right: solid 20px;
+  border-bottom: solid 5px;
+  border-left: solid 20px;
+}
+
+/* ================ FOOTER ITALIA ================= */
+
+.footerItalia__indice {
+  font-size: 22px;
+  display: flex;
+}
+
+/* ================================= HTML ROMA ================================= */
+
+/* ================ MAIN ROMA =================== */
+
+/* ================ HEADER ROMA ================= */
+
+/* ================ FOOTER ROMA ================= */
 
 /* ================================= HTML DONDE IR ================================= */
 
-/* ============================ MAIN ============================ */
+/* ================ MAIN DONDE IR =================== */
 
-/* ============= CARDS ============== 
-.sectionIr1 {
-  text-align: center;
-}
-.card__dondeIr {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-}
-
-.card__dondeIr .card {
-  width: 330px;
-  height: 420px;
-  border-radius: 9px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px;
-  text-align: center;
-  transition: all 0.25s;
-}
-.card__dondeIr .card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-.card__dondeIr .card img {
-  width: 330px;
-  height: 220px;
-}
-.card__dondeIr .card h4 {
-  font-weight: 600;
-  margin-top: 10px;
-}
-.card__dondeIr .card p {
-  padding: 0 1rem;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-
-
-/*
-.section1 {
-  background-image: url("https://source.unsplash.com/nb-VlKnqdUs");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  margin-top: 50px;
-}
-.section1 h3 {
-  color: black;
-  font-size: 60px;
-  text-align: center;
-}
-
-.section2 {
-  background-image: url(basilica_san_pietro.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  margin-top: 50px;
-}
-*/
 /* ============= CARDS ============== */
 
 .card__box {
@@ -412,120 +568,7 @@ body {
   transition-delay: 0.3s;
 }
 
-/* =========================== INDEX =========================== 
-
-.contenedor {
-  width: 90%;
-  margin: 20px;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, auto);
-  grid-template-areas:
-    "header header header"
-    "inicio inicio inicio"
-    "contenido contenido contenido"
-    "contenido1 contenido1 sidebar"
-    "moneda contenido2 sidebar"
-    "contenido3 contenido3 sidebar"
-    "contenido4 bandera sidebar"
-    "footer footer footer"
-    "hora hora hora";
-}
-
-.contenedor > div,
-.contenedor .header,
-.contenedor,
-.contenedor .sidebar,
-.contenedor .footer {
-  background-color: #4949f8ce;
-  padding: 20px;
-  border-radius: 4px;
-}
-
-.contenedor {
-  background-color: white;
-}
-
-.header {
-  grid-area: header;
-  color: black;
-}
-
-.contenedor .inicio {
-  grid-area: inicio;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
-
-.contenedor .contenido {
-  grid-area: contenido;
-  text-align: center;
-}
-
-.contenido1 {
-  grid-area: contenido1;
-
-  background-color: #6c6cf5ce;
-}
-.contenido2 {
-  grid-area: contenido2;
-
-  background-color: #6c6cf5ce;
-}
-
-.monedaImagen {
-  grid-area: moneda;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contenido3 {
-  grid-area: contenido3;
-
-  background-color: #6c6cf5ce;
-}
-.contenido4 {
-  grid-area: contenido4;
-
-  background-color: #6c6cf5ce;
-}
-
-.banderaImagen {
-  grid-area: bandera;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer {
-  grid-area: footer;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.horario {
-  grid-area: hora;
-  text-align: center;
-}
-
-*/
-
-/* =========================== HEADER =========================== */
+/* ================ HEADER DONDE IR ================= */
 
 .header {
   padding: 32px;
@@ -562,457 +605,10 @@ body {
   width: 300px;
 }
 
-/* =========================== ITALIA =========================== */
+/* ================================= HTML DATOS UTILES ================================= */
 
-.contenedorItalia {
-  width: 90%;
-  margin: 20px;
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, auto);
-  grid-template-areas:
-    "italia italia italia"
-    "arte arte arte"
-    "pintura pintura adan"
-    "pintura pintura gioconda"
-    "escultura escultura david"
-    "cultura cultura cultura"
-    "comidas gastronomia gastronomia"
-    "fiestas fiestas fiestas"
-    "footer footer footer";
-}
-
-.contenedorItalia,
-.contenedorItalia .headerItalia,
-.contenedorItalia .footerItalia {
-  background-color: #4949f8ce;
-  padding: 15px;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.headerItalia {
-  grid-area: italia;
-}
-
-.titleArte {
-  grid-area: arte;
-  font-size: 20px;
-}
-
-.infoPintura {
-  grid-area: pintura;
-  text-align: justify;
-}
-
-.imagenGioconda {
-  grid-area: gioconda;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.imagenAdan {
-  grid-area: adan;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.infoEscultura {
-  grid-area: escultura;
-  text-align: justify;
-}
-
-.imagenDavid {
-  grid-area: david;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.infoCultura {
-  grid-area: cultura;
-}
-
-.infoGastronomia {
-  grid-area: gastronomia;
-}
-
-.imagenComidas {
-  grid-area: comidas;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.infoFiestas {
-  grid-area: fiestas;
-}
-
-.footerItalia {
-  grid-area: footer;
-}
-/* ================ HEADER ITALIA ================= */
-
-.headerItalia {
-  padding: 32px;
-  margin: 10px;
-}
-
-.volverItalia {
-  font-size: 18px;
-  padding-bottom: 30px;
-}
-
-.headerItalia__menu {
-  color: black;
-  list-style: none;
-  font-size: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-}
-.headerItalia__submenu {
-  background-color: #d7d8f7af;
-  color: #a6a6ada8;
-  font-weight: bold;
-  padding: 5px 8px 5px 8px;
-  border-top: solid 5px;
-  border-right: solid 20px;
-  border-bottom: solid 5px;
-  border-left: solid 20px;
-}
-
-/* ================ FOOTER ITALIA ================= */
-
-.footerItalia__indice {
-  font-size: 22px;
-  display: flex;
-}
-
-/* =========================== ROMA =========================== */
-
-.contenedorRoma {
-  width: 90%;
-  margin: 10px;
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    "header header header"
-    "roma roma roma"
-    "roma1 roma1 roma1"
-    "roma2 roma2 roma2"
-    "roma3 roma3 roma3"
-    "roma4 roma4 roma4"
-    "roma5 roma5 roma5"
-    "roma6 roma6 roma6"
-    "roma7 roma7 roma7"
-    "roma8 roma8 roma8"
-    "roma9 roma9 roma9"
-    "roma10 roma10 roma10"
-    "footer footer footer";
-}
-
-.contenedorRoma,
-.contenedorRoma .headerRoma,
-.contenedorRoma .footerRoma {
-  background-color: #4949f8ce;
-  padding: 10px;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.headerRoma {
-  grid-area: header;
-}
-
-.sectionRoma {
-  grid-area: roma;
-  text-align: center;
-}
-.sectionRoma1 {
-  grid-area: roma1;
-}
-.sectionRoma2 {
-  grid-area: roma2;
-  padding-left: 20px;
-}
-.sectionRoma3 {
-  grid-area: roma3;
-  padding-left: 20px;
-}
-.sectionRoma4 {
-  grid-area: roma4;
-  padding-left: 20px;
-}
-.sectionRoma5 {
-  grid-area: roma5;
-  padding-left: 20px;
-}
-.sectionRoma6 {
-  grid-area: roma6;
-  padding-left: 20px;
-}
-.sectionRoma7 {
-  grid-area: roma7;
-  padding-left: 20px;
-}
-.sectionRoma8 {
-  grid-area: roma8;
-  padding-left: 20px;
-}
-.sectionRoma9 {
-  grid-area: roma9;
-  padding-left: 20px;
-}
-.sectionRoma10 {
-  grid-area: roma10;
-  padding-left: 20px;
-}
-.footerRoma {
-  grid-area: footer;
-}
-
-/* ================ HEADER ROMA ================= */
-
-/* ================ FOOTER ROMA ================= */
-
-.indiceRoma {
-  font-size: 22px;
-  display: flex;
-}
-
-/* =========================== DONDE IR =========================== */
-
-.contenedorIr {
-  width: 90%;
-  margin: 10px;
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    "header header header"
-    "sitios sitios sitios"
-    "sitiosa sitiosa sitiosa"
-    "sitiosb sitiosb sitiosb"
-    "sitiosc sitiosc sitiosc"
-    "sitiosd sitiosd sitiosd"
-    "sitiose sitiose sitiose"
-    "categorias categorias categorias"
-    "categoriasa categoriasaj categoriasaj"
-    "categoriasb categoriasbj categoriasbj"
-    "categoriasc categoriascj categoriascj"
-    "categoriasd categoriasdj categoriasdj"
-    "footer footer footer";
-}
-
-.contenedorIr,
-.contenedorIr .headerIr,
-.contenedorIr .footerIr {
-  background-color: #4949f8ce;
-  padding: 10px;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.headerIr {
-  grid-area: header;
-}
-
-.sectionIr1 {
-  grid-area: sitios;
-}
-.sectionIr1a {
-  grid-area: sitiosa;
-}
-.sectionIr1b {
-  grid-area: sitiosb;
-}
-.sectionIr1c {
-  grid-area: sitiosc;
-}
-.sectionIr1d {
-  grid-area: sitiosd;
-}
-.sectionIr1e {
-  grid-area: sitiose;
-}
-
-.sectionIr2 {
-  grid-area: categorias;
-}
-.sectionIr2a {
-  grid-area: categoriasa;
-}
-.sectionIr2a__ej {
-  grid-area: categoriasaj;
-}
-.sectionIr2b {
-  grid-area: categoriasb;
-}
-.sectionIr2b__ej {
-  grid-area: categoriasbj;
-}
-.sectionIr2c {
-  grid-area: categoriasc;
-}
-.sectionIr2c__ej {
-  grid-area: categoriascj;
-}
-.sectionIr2d {
-  grid-area: categoriasd;
-}
-.sectionIr2d__ej {
-  grid-area: categoriasdj;
-}
-
-.footerIr {
-  grid-area: footer;
-}
-
-/* ================ HEADER DONDE IR ================= */
-
-.headerIr {
-  padding: 32px;
-  margin: 10px;
-}
-
-.headerIr .menuIr {
-  color: black;
-  background-color: #60bbf7ee;
-  list-style: none;
-  font-size: 20px;
-  text-align: start;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 25px;
-}
-
-ul > ul > li {
-  padding-left: 25px;
-}
-
-.submenuIr {
-  font-size: 35px;
-  background-color: white;
-  color: #d7dbdd;
-  font-weight: bold;
-}
-.volverIr {
-  font-size: 20px;
-  margin-left: 20px;
-  padding-bottom: 40px;
-}
-
-/* ================ FOOTER DONDE IR ================= */
-
-.subirIr {
-  font-size: 20px;
-  margin-left: 20px;
-}
-
-/* =========================== DATOS UTILES =========================== */
-
-.contenedorDatos {
-  width: 90%;
-  margin: 10px;
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    "header header header"
-    "menu menu menu"
-    "ubicacion ubicacion ubicacion"
-    "ciudades ciudades ciudades"
-    "tabla tabla tabla"
-    "clima clima clima"
-    "estaciones estaciones estaciones"
-    "viajar viajar viajar"
-    "footer footer footer";
-}
-
-.contenedorDatos,
-.contenedorDatos .headerDatos,
-.contenedorDatos .footerDatos {
-  background-color: #4949f8ce;
-  padding: 10px;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.headerDatos {
-  grid-area: header;
-}
-
-.menuDatos {
-  grid-area: menu;
-}
-
-.ubicacionDatos {
-  grid-area: ubicacion;
-}
-
-.ciudadesDatos {
-  grid-area: ciudades;
-  background-color: white;
-  text-align: center;
-}
-.contenedorDatos .tablaDatos {
-  grid-area: tabla;
-  display: flex;
-  justify-content: center;
-  background-color: white;
-}
-.climaDatos {
-  grid-area: clima;
-}
-.estacionesDatos {
-  grid-area: estaciones;
-}
-.viajarDatos {
-  grid-area: viajar;
-}
-
-.footerDatos {
-  grid-area: footer;
-}
+/* ================ MAIN DATOS UTILES =================== */
 
 /* ================ HEADER DATOS UTILES ================= */
 
-.headerDatos {
-  font-size: 20px;
-  margin-left: 10px;
-  padding-bottom: 40px;
-}
-
-.menuDatos__principal {
-  color: black;
-  list-style: none;
-  font-size: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menuDatos__principal__submenu {
-  background-color: #d7d8f7af;
-  color: #a6a6ada8;
-  font-weight: bold;
-  padding: 5px 8px 5px 8px;
-  border-top: solid 5px;
-  border-right: solid 20px;
-  border-bottom: solid 5px;
-  border-left: solid 20px;
-}
-
 /* ================ FOOTER DATOS UTILES ================= */
-
-.subirDatos {
-  font-size: 20px;
-  margin-left: 20px;
-}
-
-/* =========================== CONTACTO =========================== */
