@@ -499,7 +499,7 @@ body {
 /* ================ MAIN ROMA =================== */
 
 .principal {
-  background: #1d1d1f;
+  background-color: #26272b;
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -616,9 +616,18 @@ body {
   }
 }
 
+.sectionRoma1 {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
 .sectionRoma2 {
-  margin-left: 100px;
-  margin: 30px;
+  margin: 45px;
+}
+
+.secundarioRoma {
+  background-color: #26272b;
+  color: #fff;
 }
 
 /* ================ FOOTER ROMA ================= */
