@@ -21,34 +21,15 @@ body {
   font-size: 25px;
 }
 
-/* ============= HEADER ============== *
-
-.navbar-nav {
-  margin-left: auto;
-  display: flex;
-  transition: all 0.5s ease;
+.menu__index ul li a {
+  display: block;
+  transition: all 0.4s linear;
+  border-radius: 5px;
 }
 
-.menu__index {
-  font-size: 25px;
-  display: flex;
+.menu__index ul li a:hover {
+  background-color: #1bfa21;
 }
-.menu__index li {
-  list-style: none;
-}
-.menu__index li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.5s ease;
-}
-.menu__index li a:hover {
-  padding: 5px 10px;
-  background-color: #26272b;
-  color: white;
-  border-radius: 15px;
-}
-
 /* ================ MAIN INDEX =================== */
 
 /* ============= CARDS ============== */
@@ -436,6 +417,9 @@ body {
 
 .tittle__italia {
   text-align: center;
+  background-color: #26272b;
+  color: whitesmoke;
+  padding: 5px;
 }
 
 .titleArte {
@@ -616,18 +600,23 @@ body {
   }
 }
 
+.secundarioRoma {
+  color: #fff;
+  background-color: #708090;
+}
+
 .sectionRoma1 {
   margin-top: 30px;
   margin-left: 20px;
+  text-align: center;
+  background-color: #26272b;
+  padding: 15px 25px 15px 25px;
 }
 
 .sectionRoma2 {
-  margin: 45px;
-}
-
-.secundarioRoma {
+  margin: 30px;
   background-color: #26272b;
-  color: #fff;
+  padding: 15px 25px 15px 25px;
 }
 
 /* ================ FOOTER ROMA ================= */
@@ -733,6 +722,124 @@ body {
 
 .logo__imagen {
   width: 300px;
+}
+
+/* ================ CAROUSEL CATEGORIAS =================== */
+
+h4,
+h2,
+small,
+a {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.carousel__categorias {
+  margin: 0px 10px;
+  padding: 0;
+  display: flex;
+  height: 75vh;
+  width: 100%;
+  align-items: center;
+}
+.carousel__categorias h2 {
+  font-size: 26px;
+  line-height: 38px;
+  padding-bottom: 24px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+/* images */
+
+.slick-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 304px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+.slick {
+  position: relative;
+  width: 275px;
+  padding: 0 18px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+}
+.slick h4 {
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 23px;
+  color: #fff;
+  padding: 15px;
+}
+.slick h4 small {
+  font-size: 15px;
+  display: block;
+}
+.slick a img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.slick a img:hover {
+  opacity: 0.85;
+}
+
+/* buttons */
+
+.slick-arrow {
+  border-radius: 30px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: 0;
+  cursor: pointer;
+}
+.slick-arrow:focus {
+  outline: 0;
+}
+.slick-arrow svg {
+  width: 12px;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+.slick-prev {
+  left: 0px;
+}
+.slick-next {
+  right: 0px;
+}
+
+.sectionIr2a {
+  text-align: center;
+  margin-top: 50px;
 }
 
 /* ================================= HTML DATOS UTILES ================================= */

@@ -27,6 +27,14 @@ DONDE IR.html
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"
+    />
   </head>
   <body>
     <header>
@@ -179,27 +187,156 @@ DONDE IR.html
           Renacimiento, el gótico o el neoclásico.
         </p>
       </div>
+      <div class="carousel__categorias">
+        <div class="slick-list" id="slick-list">
+          <button
+            class="slick-arrow slick-prev"
+            id="button-prev"
+            data-button="button-prev"
+            onclick="app.processingButton(event)"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-left"
+              class="svg-inline--fa fa-chevron-left fa-w-10"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+              ></path>
+            </svg>
+          </button>
+          <div class="slick-track" id="track">
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4>
+                    <small>Museo Santa Sabana (Santo Sudario)</small>
+                  </h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/sabanaSanta.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Galeria Borghese</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/galeriaBorghese.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Museo Galileo</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/museoGalileo.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Museo de la Porziuncola</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/porziuncola.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Pinacoteca di Brera</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/pinacoteca1.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Museo Egipcio (Turin)</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/egipcioTurin.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="slick-arrow slick-next"
+            id="button-next"
+            data-button="button-next"
+            onclick="app.processingButton(event)"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-right"
+              class="svg-inline--fa fa-chevron-right fa-w-10"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
       <div class="sectionIr2a__ej">
         <h4>Museos destacados:</h4>
+
         <p>
-          -Museo paleontológico: del Monte Subasio de Asís con fósiles de
-          admonites encontrados en el sitio.
+          -Museo de la Sábana Santa (Santo Sudario) en Turín: donde la reserva
+          es obligatoria. La visita dura unos 5 minutos, dada la gran afluencia
+          de gente.
         </p>
         <p>
-          -Museo de la Sábana Santa en Turín: donde la reserva es obligatoria.
-          La visita dura unos 5 minutos, dada la gran afluencia de gente.
+          -Galeria Borghese: es un museo de arte situado en los jardines de
+          Villa Borghese, Roma. Dentro de la renombrada riqueza artística de la
+          ciudad, es una de las pinacotecas esenciales, de visita obligada.
         </p>
         <p>
           -Museo Arqueológico de Bari: cuya principal colección está formada por
           restos de la antigua Grecia.
         </p>
         <p>
-          -Museo de la Ciencia: en el centro de Florencia con todos los
-          instrumentos astronómicos inventados por Galileo.
-        </p>
-        <p>
-          -Museo Arqueológico Cívico de Bolonia: con la sección prehistórica y
-          griega.
+          -Museo Galileo: en el centro de Florencia con todos los instrumentos
+          astronómicos inventados por Galileo.
         </p>
         <p>
           -Museo de la Porziuncola: dentro de la Basílica de Santa Maria degli
@@ -220,7 +357,7 @@ DONDE IR.html
           pruebas a superar para que el alma entre en la otra vida.
         </p>
       </div>
-      <div class="sectionIr2b" id="section4">
+      <div class="sectionIr2a" id="section4">
         <h3>Monumentos</h3>
         <p>
           Italia es uno de los países más importantes además de ser considerado
@@ -233,6 +370,149 @@ DONDE IR.html
           la posteridad como evidencia de su grandeza y que se encuentra en lo
           más profundo de esta nación.
         </p>
+      </div>
+      <div class="carousel__categorias">
+        <div class="slick-list" id="slick-list">
+          <button
+            class="slick-arrow slick-prev"
+            id="button-prev"
+            data-button="button-prev"
+            onclick="app.processingButton(event)"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-left"
+              class="svg-inline--fa fa-chevron-left fa-w-10"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+              ></path>
+            </svg>
+          </button>
+          <div class="slick-track" id="track">
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4>
+                    <small>El Coliseo Romano</small>
+                  </h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/monumento/coliseo.png"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Coliseo Por dentro</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/monumento/coliseo1.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Arco de la Paz</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/monumento/arcoPaz.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Cementerio Monumental de Milan</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/monumento/cementerioMilan.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Torre Campanaria de Giotto</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/monumento/campanile.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Palacio Ducal</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/monumento/palacioDucal.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Ponte Vecchio</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/monumentos/monumento/ponteVecchio.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="slick-arrow slick-next"
+            id="button-next"
+            data-button="button-next"
+            onclick="app.processingButton(event)"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-right"
+              class="svg-inline--fa fa-chevron-right fa-w-10"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
       <div class="sectionIr2b__ej">
         <h4>Monumentos destacados:</h4>
@@ -272,7 +552,7 @@ DONDE IR.html
           importantes.
         </p>
       </div>
-      <div class="sectionIr2c" id="section5">
+      <div class="sectionIr2a" id="section5">
         <h3>Iglesias</h3>
         <p>
           Italia es un país de gran tradición y cultura, por lo que su fervor
@@ -290,8 +570,125 @@ DONDE IR.html
           afluencia sólo por ese aspecto de su atractivo turístico.
         </p>
       </div>
+      <div class="carousel__categorias">
+        <div class="slick-list" id="slick-list">
+          <button
+            class="slick-arrow slick-prev"
+            id="button-prev"
+            data-button="button-prev"
+            onclick="app.processingButton(event)"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-left"
+              class="svg-inline--fa fa-chevron-left fa-w-10"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+              ></path>
+            </svg>
+          </button>
+          <div class="slick-track" id="track">
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4>
+                    <small>Capilla Sixtina</small>
+                  </h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/iglesias/capillaSixtina.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Basilica de San Pedro</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/iglesias/basilicaSanPedro.jpeg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Catedral de Milan</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/iglesias/catedralMilan2.jpeg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Basilica de San Marcos</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/iglesias/basilicaSanMarcos.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>San Juan de los Ermitaños</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/iglesias/sanjuanErmitanos1.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="slick-arrow slick-next"
+            id="button-next"
+            data-button="button-next"
+            onclick="app.processingButton(event)"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-right"
+              class="svg-inline--fa fa-chevron-right fa-w-10"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
       <div class="sectionIr2c__ej">
-        <h4>Iglesias destacadas</h4>
+        <h4>Iglesias destacadas:</h4>
         <p>
           -Capilla Sixtina: Este es uno de los lugares más importantes de todo
           El Vaticano; cuenta con una forma rectangular y está ubicada cerca de
@@ -319,7 +716,7 @@ DONDE IR.html
           sus cinco cúpulas que la decoran.
         </p>
       </div>
-      <div class="sectionIr2d" id="section6">
+      <div class="sectionIr2a" id="section6">
         <h3>Plazas</h3>
         <p>
           Dentro de los sitios turísticos que se encuentran en este
@@ -329,8 +726,164 @@ DONDE IR.html
           creciendo y desarrollándose.
         </p>
       </div>
+      <div class="carousel__categorias">
+        <div class="slick-list" id="slick-list">
+          <button
+            class="slick-arrow slick-prev"
+            id="button-prev"
+            data-button="button-prev"
+            onclick="app.processingButton(event)"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-left"
+              class="svg-inline--fa fa-chevron-left fa-w-10"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+              ></path>
+            </svg>
+          </button>
+          <div class="slick-track" id="track">
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4>
+                    <small>Piazza del Duomo</small>
+                  </h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/plazas/piazzaDuomo.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Piazza de San Marco</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/plazas/piazzaSanMarco.jpeg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Piazza Navona</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/plazas/piazzaNavona1.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Piazza del Popolo</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/plazas/piazzaPopolo1.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Piazza Michelangelo</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/plazas/piazzaMichelangelo1.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Piazza del Campo</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/plazas/piazzaCampo.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Piazza Spagna</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/plazas/piazzaSpagna.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="slick">
+              <div>
+                <a href="#">
+                  <h4><small>Piazza della Signoria</small></h4>
+                  <picture>
+                    <img
+                      src="../imagenes/Donde Ir/plazas/piazzaSignoria1.jpg"
+                      alt="Image"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="slick-arrow slick-next"
+            id="button-next"
+            data-button="button-next"
+            onclick="app.processingButton(event)"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-right"
+              class="svg-inline--fa fa-chevron-right fa-w-10"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
       <div class="sectionIr2d__ej">
-        <h4>A continuación alguna de las plazas más populares de Italia:</h4>
+        <h4>Plazas destacadas:</h4>
         <p>
           -Piazza del Duomo (Florencia): viajar a Florencia es disfrutar de una
           obra de arte y admirar su Piazza del Duomo es la mejor manera de
@@ -339,13 +892,52 @@ DONDE IR.html
           civilización italiana, la capital toscana logra ser al mismo tiempo,
           histórica y moderna.
         </p>
-        <p>-Piazza de San Marcos (Venecia)</p>
-        <p>-Piazza Navona (Roma)</p>
-        <p>-Piazza del Popolo (Roma)</p>
-        <p>-Piazza Michelangelo (Florencia)</p>
-        <p>-Piazza del Campo (Siena)</p>
-        <p>-Piazza de España (Roma)</p>
-        <p>-Piazza della Signoria (Florencia)</p>
+        <p>
+          -Piazza de San Marcos (Venecia): se encuentra en el corazón de Venecia
+          y es la unica piazza de Venecia, ya que es resto son piazzales o
+          campos. Su construcción se inició en el siglo IX adoptando el tamaño y
+          forma actual en 1177, siendo pavimentada 100 años después.
+        </p>
+        <p>
+          -Piazza Navona (Roma): es uno de los espacios urbanos más destacados
+          de Roma, que reúne esculturas, fuentes y edificios de gran valor
+          artístico y supone un centro de la vida social, cultural y turística
+          de la ciudad.
+        </p>
+        <p>
+          -Piazza del Popolo (Roma): desemboca en el llamado «Tridente». La zona
+          de las tres grandes calles rectas que nos introducen en el centro de
+          Roma gracias a tres calles muy importantes. Via del Babuino nos lleva
+          en dirección al Quirinale – Santa María la Mayor, la antigua via
+          Clementina. Via del Corso que va hacia el Campidoglio y los Foros. Y
+          Via di Ripetta que nos conduce hacia Plaza Navona y el Vaticano, la
+          antigua via Leonina que regularizaba un trazado de época clásica.
+        </p>
+        <p>
+          -Piazza Michelangelo (Florencia): es una amplia explanada, que se alza
+          como un mirador sobre el valle del Arno y desde donde se observa toda
+          Florencia. El monumento a Miguel Ángel está protagonizado por una
+          copia del David realizada en bronce.
+        </p>
+        <p>
+          -Piazza del Campo (Siena): es la plaza principal del centro histórico
+          de Siena, considerada una de las mejores plazas medievales de Europa.
+          El Palazzo Pubblico y su Torre del Mangia, junto con varios palazzi
+          signorili, rodean la plaza, que tiene forma de concha. En el noroeste
+          está la Fonte Gaia.
+        </p>
+        <p>
+          -Piazza de Spagna (Roma): es una de las plazas más famosas de Roma.
+          Toma su nombre del Palacio de España, sede de la embajada española
+          ante la Santa Sede y ante la Orden de Malta.
+        </p>
+        <p>
+          -Piazza della Signoria (Florencia): es la plaza más importante de
+          Florencia. Está situada entre la Piazza del Duomo y el río Arno. La
+          Piazza adoptó su forma actual a mediados del siglo XIII y fue
+          pavimentada a finales del siglo XIV. Siempre ha estado muy unida al
+          poder civil.
+        </p>
       </div>
     </div>
     <!-- FOOTER -->
@@ -462,5 +1054,12 @@ DONDE IR.html
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/app.js"></script>
+    <script defer src="../js/main.js"></script>
   </body>
 </html>
