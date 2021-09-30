@@ -1,6 +1,7 @@
 * {
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 
 body {
@@ -336,6 +337,7 @@ body {
   background-color: #26272b;
   color: whitesmoke;
   padding: 5px;
+  border-radius: 20px;
 }
 
 .titleArte {
@@ -547,6 +549,7 @@ body {
   margin: 30px;
   background-color: #26272b;
   padding: 15px 25px 15px 25px;
+  border-radius: 10px;
 }
 
 /* ================ FOOTER ROMA ================= */
@@ -777,11 +780,18 @@ a {
 .sectionIr2a {
   text-align: center;
   margin-top: 50px;
-  background-color: #26272b;
+  background-color: #e74c3c;
   color: #fff;
   padding: 20px;
   border-radius: 10%;
 }
+
+.sectionIr2a__ej {
+  background-color: #239b56;
+  padding: 20px;
+  border-radius: 20px;
+}
+
 .sectionIr2a__ej h4 {
   margin-bottom: 30px;
 }
