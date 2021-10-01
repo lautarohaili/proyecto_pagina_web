@@ -803,6 +803,158 @@ a {
 
 /* ================ MAIN DATOS UTILES =================== */
 
+.ubicacion__datos {
+  font-size: 16px;
+  text-align: center;
+  background-color: #239b56;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.ubicacion__datos p {
+  padding-left: 10px;
+}
+
+.maps {
+  width: 1050px;
+  height: 350px;
+  padding-left: 110px;
+}
+
+@media screen and (max-width: 800px) {
+  .maps {
+    width: auto;
+    height: auto;
+    padding-left: 100px;
+  }
+  .ubicacion__datos {
+    text-align: center;
+    background-color: #239b56;
+    border-radius: 20px;
+    padding: 2px;
+    margin-bottom: 15px;
+  }
+}
+
+.aeropuertos__datos h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background-color: #239b56;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.aeropuerto1__datos {
+  margin-bottom: 50px;
+}
+.aeropuerto1__datos h4 {
+  background-color: #e74c3c;
+  border-radius: 20px;
+  padding: 12px;
+  margin-right: 675px;
+}
+
+.section1__datos {
+  text-align: center;
+  background-color: #239b56;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.section2__datos {
+  background-color: #e74c3c;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 750px;
+  padding: 15px;
+}
+
+.card__datos {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.card__datos .card {
+  position: relative;
+  max-width: 400px;
+  height: 245px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.card__datos .card:hover {
+  height: 550px;
+}
+
+.card__datos .card .imgCard {
+  position: relative;
+  width: 360px;
+  height: 250px;
+  top: -60px;
+  left: 3px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__datos .card .imgCard img {
+  height: 270px;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.card__datos .card .content__card {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.card__datos .card .content__card h4 {
+  text-align: center;
+}
+
+.card__datos .card:hover .content__card {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+.cuando__datos {
+  margin-top: 30px;
+}
+
+.cuando__datos h4 {
+  text-align: center;
+  font-size: 28px;
+  background-color: #239b56;
+  border-radius: 20px;
+
+  padding: 10px;
+}
+
+.cuando__datos p {
+  background-color: #e74c3c;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 150px;
+  padding: 10px;
+}
+
 /* ================ HEADER DATOS UTILES ================= */
 
 /* ================ FOOTER DATOS UTILES ================= */
