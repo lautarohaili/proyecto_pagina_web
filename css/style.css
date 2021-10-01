@@ -855,6 +855,13 @@ a {
   margin-right: 675px;
 }
 
+@media screen and (max-width: 800px) {
+  .aeropuerto1__datos h4 {
+    background-color: #e74c3c;
+    margin-right: 310px;
+  }
+}
+
 .section1__datos {
   text-align: center;
   background-color: #239b56;
@@ -870,6 +877,13 @@ a {
   margin-left: 30px;
   margin-right: 750px;
   padding: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .section2__datos h4 {
+    background-color: #e74c3c;
+    margin-right: 310px;
+  }
 }
 
 .card__datos {
